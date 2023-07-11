@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*signup page*/
+
+.logContainer{
+    width: 100%;
+    min-height: 100vh;
+    max-height: max-content;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)),url("assets/bg1.jpg") center/cover no-repeat ;
+}
+.loginNav{
+    padding: .8em 10em;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 2px solid red;*/
+}
+.navLogo img{
+    width: 10em;
+}
+.rightNav{
+    display: flex;
+    align-items: center;
+
+}
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: .2em;
+    margin-right:  1em;
+    padding: .3em .8em;
+    font-size: 1em;
+    color: white;
+}
+
+#lang {
+    background: transparent;
+    font-size: 1em;
+    border: none;
+    color: white;
+}
+
+.btn{
+    color: whitesmoke;
+    background-color: red;
+    border-radius: .2rem;
+    padding: .5em .8em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+.btn:hover{
+    background-color: darkred;
+}
+
+.loginInfo{
+    color: whitesmoke;
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    place-content: center;
+    place-items: center;
+    grid-gap: 1em;
+}
+.loginInfo h1{
+    font-size: 3em;
+}
+.loginInfo h2{
+    font-size: 2em;
+}
+.loginInfo h3{
+    font-size: 1.5em;
+}
+.mailArea{
+    display: flex;
+    /*align-items: center;*/
+    column-gap: 10px;
+}
+.mailArea input{
+    color: whitesmoke;
+    width: 23em;
+    height: 3.5em;
+    padding: 0 10px;
+    background-color: rgba(58, 55, 55, 0.7);
+    outline: none;
+    border:1px solid grey ;
+    border-radius: 5px;
+}
+
+.startedBtn{
+    padding: .2em .5em;
+   font-size: 25px;
+    width: 10em;
+}
+span{
+   color: whitesmoke;
+}
+.parent{
+    color: darkgrey;
+    height: 90vh;
+    max-height: 800px;
+    width: 35%;
+    padding: 40px;
+    margin: 20px auto;
+    border: 1px solid grey;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1em;
+}
+.form{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    /*border: 1px solid blue;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formLogo{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.signupMail{
+  flex-direction: column;
+    row-gap: 10px;
+}
+.signInBtn{
+    width: 19em;
+    padding: .6em 1em;
+    font-size: 1em;
+}
+.btnSection{
+    display: grid;
+    margin-top: 20px;
+    row-gap: 10px;
+}
+.checkBox #check{
+    background: grey;
+}
+
+.help{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.info{
+    padding-top: 50px;
+    height: 30%;
+    width: 80%;
+    /*border: 1px solid blue;*/
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    text-decoration: underline;
+}
+.info div {
+    margin-top: 10px;
+}
+
+u{
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+u:hover{
+    text-decoration: underline;
+}
+mark{
+    cursor: pointer;
+    color: blue;
+    background-color: transparent;
+}
+
+.signupFooter{
+    width: 100%;
+    margin-top: 30px;
+    height: max-content;
+    padding: 50px 150px;
+    color: grey;
+    /*border: 2px solid blue;*/
+}
+.languageFooter{
+    width: 9em;
+    padding: .6em 1em;
+}
+
+.support {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+ul{
+    list-style: none;
+
+}
+ul li{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and ( max-width: 1000px ){
+    .loginNav{
+        padding: .4em 6em;
+    }
+    .navLogo img{
+        width: 8em;
+    }
+    .loginInfo h1{
+        font-size: 2.5em;
+    }
+    .loginInfo h2{
+        font-size: 2em;
+    }
+    .loginInfo h3{
+        font-size: 1.3em;
+    }
+    .mailArea input{
+        width: 20em;
+        height: 3em;
+    }
+    .startedBtn{
+        padding: .2em .5em;
+        font-size: 20px;
+        width: 9em;
+    }
+    .parent{
+        width: 40%;
+    }
+    .signupMail input{
+        width: 20em;
+    }
+    .btnSection .signInBtn{
+        width: 18em;
+        font-size: .9em;
+        padding: .7em 1.1em;
+    }
+    .info{
+        width: 100%;
+        /*border: 1px solid blue;*/
+    }
+}
+@media screen and ( max-width: 748px ){
+    .loginNav{
+        padding: .4em 4em;
+    }
+    .loginInfo h1{
+        font-size: 2em;
+    }
+    .loginInfo h2{
+        font-size: 1.6em;
+    }
+    .loginInfo h3{
+        font-size: 1.1em;
+    }
+    .mailArea input{
+        width: 15em;
+        height: 3em;
+    }
+    .startedBtn{
+        padding: .2em .5em;
+        font-size: 18px;
+        width: 8em;
+    }
+    .parent{
+        width: 50%;
+    }
+    .signupMail input{
+        width: 18em;
+    }
+    .btnSection .signInBtn{
+        width: 16em;
+        font-size: .9em;
+        padding: .6em 1em;
+    }
+    .info{
+        width: 90%;
+        /*border: 1px solid blue;*/
+    }
+}
+@media only screen and ( max-width: 640px ){
+    .loginNav{
+        padding: .8em 2em;
+
+    }
+    .navLogo img{
+        width: 7em;
+    }
+    .language{
+        padding: .2em .6em;
+        font-size: .7em;
+    }
+    .btn{
+        padding: .2em .6em;
+    }
+    .loginInfo{
+        padding: 0 20px;
+    }
+    .loginInfo h1{
+        font-size: 1.5em;
+    }
+    .loginInfo h2{
+        font-size: 1.2em;
+    }
+    .loginInfo h3{
+        font-size: .8em;
+    }
+    .mailArea input{
+        width: 12em;
+        height: 2.5em;
+    }
+    .startedBtn{
+        padding: .2em .5em;
+        font-size: 14px;
+        width: 8em;
+    }
+    .App .formContainer{
+        background: black center/cover no-repeat;
+    }
+    .parent{
+        width:  100%;
+        padding: 40px;
+        height: 80vh;
+        max-height: 800px;
+        border: none;
+    }
+    .form{
+        height: 60%;
+        align-items: flex-start;
+    }
+    .signupMail{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .signupMail input{
+        width: 100%;
+        height: 4em;
+        border: none;
+    }
+    .btnSection{
+        width: 100%;
+    }
+    .btnSection .signInBtn{
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .info{
+        height: 40%;
+    }
+    .help{
+        justify-content: space-between;
+    }
+    .signupFooter{
+        padding: 40px 50px;
+    }
+}
